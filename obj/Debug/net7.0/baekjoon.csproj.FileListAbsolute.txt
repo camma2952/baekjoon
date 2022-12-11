@@ -1,0 +1,15 @@
+C:\Users\camma\source\repos\baekjoon\baekjoon\bin\Debug\net7.0\baekjoon.exe
+C:\Users\camma\source\repos\baekjoon\baekjoon\bin\Debug\net7.0\baekjoon.deps.json
+C:\Users\camma\source\repos\baekjoon\baekjoon\bin\Debug\net7.0\baekjoon.runtimeconfig.json
+C:\Users\camma\source\repos\baekjoon\baekjoon\bin\Debug\net7.0\baekjoon.dll
+C:\Users\camma\source\repos\baekjoon\baekjoon\bin\Debug\net7.0\baekjoon.pdb
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.csproj.AssemblyReference.cache
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.AssemblyInfoInputs.cache
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.AssemblyInfo.cs
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.csproj.CoreCompileInputs.cache
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.dll
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\refint\baekjoon.dll
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.pdb
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\baekjoon.genruntimeconfig.cache
+C:\Users\camma\source\repos\baekjoon\baekjoon\obj\Debug\net7.0\ref\baekjoon.dll

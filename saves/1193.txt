@@ -1,0 +1,65 @@
+﻿#pragma warning disable
+using System;
+
+class program
+{
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        bool end = false;
+        int cnt = 0;
+
+        for (int i = 1, ty = 1; ; i++, ty = (ty + 1) % 2)
+        {
+            if (ty == 0)
+            {
+                int nume = 1, demo = i;
+
+                while (true)
+                {
+                    cnt++;
+                    if (cnt == n)
+                    {
+                        Console.WriteLine(nume + "/" + demo);
+                        end = true;
+                        break;
+                    }
+                    else if (demo == 1)
+                    {
+                        break;
+                    }
+
+                    nume++;
+                    demo--;
+                }
+            }
+            else
+            {
+                int nume = i, demo = 1;
+
+                while (true)
+                {
+                    cnt++;
+                    if (cnt == n)
+                    {
+                        Console.WriteLine(nume + "/" + demo);
+                        end = true;
+                        break;
+                    }
+                    else if (nume == 1)
+                    {
+                        break;
+                    }
+
+                    nume--;
+                    demo++;
+                }
+            }
+
+            if (end)
+            {
+                break;
+            }
+        }
+    }
+}

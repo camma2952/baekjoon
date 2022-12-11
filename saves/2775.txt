@@ -1,0 +1,46 @@
+﻿#pragma warning disable
+using System;
+using System.Reflection;
+
+class program
+{
+    static void Main()
+    {
+        int[,] peopc = new int[20, 20];
+        for (int i = 0; i <= 14; i++)
+        {
+            for(int j = 1; j <= 14; j++)
+            {
+                if (i == 0)
+                {
+                    peopc[i, j] = j;
+                }
+                else
+                {
+                    peopc[i, j] = 0;
+                    for (int k = 1; k <= j; k++)
+                    {
+                        peopc[i, j] += peopc[(i - 1), k];
+                    }
+                }
+            }
+        }
+
+        //for (int i = 0; i <= 14; i++)
+        //{
+        //    for (int j = 1; j <= 14; j++)
+        //    {
+        //        Console.Write(peopc[i, j] + " ");
+        //    }
+        //    Console.WriteLine();
+        //}
+
+        int t = int.Parse(Console.ReadLine());
+        for(int i=0;i<t; i++)
+        {
+            int k = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(peopc[k, n]);
+        }
+    }
+}
