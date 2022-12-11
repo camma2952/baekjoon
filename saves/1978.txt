@@ -1,0 +1,43 @@
+﻿#pragma warning disable
+using System;
+using System.Reflection;
+
+class program
+{
+    static bool checkpr(int n)
+    {
+        for(int i = 2; i < n; i++)
+        {
+            if (n % i == 0)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static void Main()
+    {
+        int t = int.Parse(Console.ReadLine()), cnt = 0;
+        string[] rinp = Console.ReadLine().Split();
+        bool[] prime = new bool[1005];
+        prime[1] = false;
+
+        for(int i = 2; i <= 1000; i++)
+        {
+            prime[i] = checkpr(i);
+        }
+
+        for(int i = 0; i < t; i++)
+        {
+            int n = int.Parse(rinp[i]);
+            if (prime[n])
+            {
+                cnt++;
+            }
+        }
+
+        Console.WriteLine(cnt);
+    }
+}
