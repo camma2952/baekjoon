@@ -1,0 +1,29 @@
+﻿#pragma warning disable
+using System;
+
+string str = Console.ReadLine();
+str = str.ToLower();
+
+int[] alp = new int[26];
+for(int i = 0; i < str.Length; i++)
+{
+    alp[(int)str[i] - 97]++;
+}
+
+int maxnum = 0;
+char maxchr = 'a';
+
+for(int i = 0; i < 26; i++)
+{
+    if (alp[i] > maxnum)
+    {
+        maxchr = (char)(i + 97);
+        maxnum = alp[i];
+    }
+    else if (alp[i] == maxnum)
+    {
+        maxchr = '?';
+    }
+}
+
+Console.WriteLine(maxchr.ToString().ToUpper());

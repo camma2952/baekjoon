@@ -1,0 +1,20 @@
+﻿#pragma warning disable
+using System;
+
+string[] rinp = Console.ReadLine().Split();
+int x = int.Parse(rinp[1]);
+rinp = Console.ReadLine().Split();
+List<int> res = new List<int>();
+
+for(int i = 0; i < rinp.Length; i++)
+{
+    if (int.Parse(rinp[i]) < x)
+    {
+        res.Add(int.Parse(rinp[i]));
+    }
+}
+
+foreach (int tmp in res)
+{
+    Console.Write(tmp + " ");
+}

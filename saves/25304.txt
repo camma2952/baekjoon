@@ -1,0 +1,20 @@
+﻿#pragma warning disable
+using System;
+
+int wmn = int.Parse(Console.ReadLine());
+int t = int.Parse(Console.ReadLine());
+int mn = 0;
+for (int i = 0; i < t; i++)
+{
+    string[] rinp = Console.ReadLine().Split();
+    mn += int.Parse(rinp[0]) * int.Parse(rinp[1]);
+}
+
+if (mn == wmn)
+{
+    Console.WriteLine("Yes");
+}
+else
+{
+    Console.WriteLine("No");
+}

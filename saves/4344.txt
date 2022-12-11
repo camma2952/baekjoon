@@ -1,0 +1,24 @@
+﻿#pragma warning disable
+
+int t = int.Parse(Console.ReadLine());
+for(int i = 0; i < t; i++)
+{
+    string[] score = Console.ReadLine().Split(' ');
+    double avr = 0, cnt = 0;
+
+    for(int j = 1; j < score.Length; j++)
+    {
+        avr += double.Parse(score[j]);
+    }
+    avr /= (score.Length - 1);
+
+    for(int j = 1; j < score.Length; j++)
+    {
+        if (double.Parse(score[j]) > avr)
+        {
+            cnt++;
+        }
+    }
+
+    Console.WriteLine(string.Format("{0:0.000}%", (cnt / (score.Length - 1) * 100)));
+}

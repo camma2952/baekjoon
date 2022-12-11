@@ -1,0 +1,24 @@
+﻿#pragma warning disable
+using System;
+using System.Text;
+
+class program
+{
+    static void Main(string[] args)
+    {
+        int t = int.Parse(Console.ReadLine());
+        int[] a = new int[t];
+        int[] b = new int[t];
+        StringBuilder nums = new StringBuilder();
+
+        for (int i = 0; i < t; i++)
+        {
+            string[] ab = Console.ReadLine().Split(' ');
+            a[i] = int.Parse(ab[0]);
+            b[i] = int.Parse(ab[1]);
+            nums.Append((a[i] + b[i]) + "\n");
+        }
+
+        Console.WriteLine(nums.ToString());
+    }
+}

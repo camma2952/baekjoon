@@ -1,0 +1,20 @@
+﻿#pragma warning disable
+using System;
+
+string strs = Console.ReadLine().Trim();
+int cnt = 0;
+
+if (strs.Length == 0)
+{
+    cnt--;
+}
+
+for (int i = 0; i < strs.Length; i++)
+{
+    if (strs[i] == ' ')
+    {
+        cnt++;
+    }
+}
+
+Console.WriteLine(cnt + 1);

@@ -1,0 +1,16 @@
+﻿#pragma warning disable
+using System;
+
+int n = int.Parse(Console.ReadLine());
+int fn = n, cnt = 0;
+while (true)
+{
+    cnt++;
+    n = (n % 10 * 10) + ((n % 10) + (n / 10 % 10)) % 10;
+    if (n == fn)
+    {
+        break;
+    }
+}
+
+Console.WriteLine(cnt);

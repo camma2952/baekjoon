@@ -1,0 +1,28 @@
+﻿#pragma warning disable
+using System;
+
+int t = int.Parse(Console.ReadLine());
+int rs = t;
+for (int i = 0; i < t; i++)
+{
+    bool[] before = new bool[26];
+    string str = Console.ReadLine().ToLower();
+
+    before[(int)str[0] - 97] = true;
+    for (int j = 1; j < str.Length; j++)
+    {
+        int code = ((int)str[j]) - 97;
+        
+        if (before[code] && str[j] != str[j - 1])
+        {
+            rs--;
+            break;
+        }
+        else
+        {
+            before[code] = true;
+        }
+    }
+}
+
+Console.WriteLine(rs);

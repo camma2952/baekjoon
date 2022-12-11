@@ -1,0 +1,13 @@
+﻿#pragma warning disable
+using System;
+
+long cnt = 0;
+string num = Console.ReadLine();
+num = Console.ReadLine();
+
+for(int i = 0; i < num.Length; i++)
+{
+    cnt += int.Parse(num[i].ToString());
+}
+
+Console.WriteLine(cnt);

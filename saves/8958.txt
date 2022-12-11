@@ -1,0 +1,23 @@
+﻿#pragma warning disable
+
+int t = int.Parse(Console.ReadLine());
+for(int i = 0; i < t; i++)
+{
+    string answer = Console.ReadLine();
+    int score = 0, combo = 1;
+
+    for(int j = 0; j < answer.Length; j++)
+    {
+        if (answer[j] == 'O')
+        {
+            score += combo;
+            combo++;
+        }
+        else
+        {
+            combo = 1;
+        }
+    }
+
+    Console.WriteLine(score);
+}

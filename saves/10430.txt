@@ -1,0 +1,12 @@
+﻿#pragma warning disable
+using System;
+
+string[] inps = Console.ReadLine().Split();
+int a = int.Parse(inps[0]);
+int b = int.Parse(inps[1]);
+int c = int.Parse(inps[2]);
+
+Console.WriteLine((a + b) % c);
+Console.WriteLine((a + b) % c);
+Console.WriteLine((a * b) % c);
+Console.WriteLine((a * b) % c);

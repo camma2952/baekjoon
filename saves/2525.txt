@@ -1,0 +1,11 @@
+﻿#pragma warning disable
+using System;
+
+string[] rinp = Console.ReadLine().Split(' ');
+int h = int.Parse(rinp[0]);
+int m = int.Parse(rinp[1]) + int.Parse(Console.ReadLine());
+h += m / 60;
+h %= 24;
+m %= 60;
+
+Console.WriteLine(h + " " + m);

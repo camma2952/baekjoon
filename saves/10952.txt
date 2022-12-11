@@ -1,0 +1,18 @@
+﻿#pragma warning disable
+using System;
+
+while (true)
+{
+    string[] rinp = Console.ReadLine().Split();
+    int a = int.Parse(rinp[0]);
+    int b = int.Parse(rinp[1]);
+
+    if (a == 0 && b == 0)
+    {
+        break;
+    }
+    else
+    {
+        Console.WriteLine(a + b);
+    }
+}

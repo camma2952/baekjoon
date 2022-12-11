@@ -1,0 +1,6 @@
+﻿#cs쓰는 나는 이거 못해서 그냥 py 코드 배껴 적음
+def solve(a):
+    total = 0
+    for x in a:
+        total += x
+    return total

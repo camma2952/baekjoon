@@ -1,0 +1,7 @@
+﻿#pragma warning disable
+using System;
+
+string tlyear = Console.ReadLine();
+int koyear = int.Parse(tlyear);
+
+Console.WriteLine(koyear - 543);

@@ -1,0 +1,7 @@
+﻿#pragma warning disable
+using System;
+
+Console.WriteLine("\\    /\\");
+Console.WriteLine(" )  ( ')");
+Console.WriteLine("(  /  )");
+Console.WriteLine(" \\(__)|");

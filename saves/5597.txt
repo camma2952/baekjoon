@@ -1,0 +1,19 @@
+﻿#pragma warning disable
+using System;
+
+bool[] brought = new bool[35];
+System.Array.Clear(brought, 0, brought.Length);
+
+for (int i = 0; i < 28; i++)
+{
+    int n = int.Parse(Console.ReadLine());
+    brought[n] = true;
+}
+
+for (int i = 1; i <= 30; i++)
+{
+    if (!brought[i])
+    {
+        Console.WriteLine(i);
+    }
+}

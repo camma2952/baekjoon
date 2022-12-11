@@ -1,0 +1,22 @@
+﻿#pragma warning disable
+using System;
+
+string[] rinp = Console.ReadLine().Split(' ');
+int h = int.Parse(rinp[0]);
+int m = int.Parse(rinp[1]);
+
+if (m >= 45)
+{
+    Console.WriteLine(h + " " + (m - 45));
+}
+else
+{
+    if (h == 0)
+    {
+        Console.WriteLine(23 + " " + (m + 15));
+    }
+    else
+    {
+        Console.WriteLine(h - 1 + " " + (m + 15));
+    }
+}

@@ -1,0 +1,43 @@
+﻿#pragma warning disable
+using System;
+
+string str = Console.ReadLine().ToUpper();
+int cnt = 0;
+
+foreach(char c in str)
+{
+    if ("ABC".Contains(c))
+    {
+        cnt += 2;
+    }
+    else if ("DEF".Contains(c))
+    {
+        cnt += 3;
+    }
+    else if ("GHI".Contains(c))
+    {
+        cnt += 4;
+    }
+    else if ("JKL".Contains(c))
+    {
+        cnt += 5;
+    }
+    else if ("MNO".Contains(c))
+    {
+        cnt += 6;
+    }
+    else if ("PQRS".Contains(c))
+    {
+        cnt += 7;
+    }
+    else if ("TUV".Contains(c))
+    {
+        cnt += 8;
+    }
+    else if ("WXYZ".Contains(c))
+    {
+        cnt += 9;
+    }
+}
+
+Console.WriteLine(cnt + str.Length);

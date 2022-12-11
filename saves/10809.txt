@@ -1,0 +1,23 @@
+﻿#pragma warning disable
+using System;
+
+string str = Console.ReadLine();
+int[] alp = new int[26];
+
+for(int i = 0; i < alp.Length; i++)
+{
+    alp[i] = -1;
+}
+
+for(int i = 0; i < str.Length; i++)
+{
+    if(alp[(int)str[i] - 97] == -1)
+    {
+        alp[(int)str[i] - 97] = i;
+    }
+}
+
+for(int i = 0; i < 26; i++)
+{
+    Console.Write(alp[i] + " ");
+}

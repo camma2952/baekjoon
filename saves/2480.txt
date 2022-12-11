@@ -1,0 +1,28 @@
+﻿#pragma warning disable
+using System;
+
+string[] rinp = Console.ReadLine().Split(' ');
+int a = int.Parse(rinp[0]);
+int b = int.Parse(rinp[1]);
+int c = int.Parse(rinp[2]);
+
+if (a == b && b == c && a == c)
+{
+    Console.WriteLine(a * 1000 + 10000);
+}
+else if (a == b)
+{
+    Console.WriteLine(100 * a + 1000);
+}
+else if (a == c)
+{
+    Console.WriteLine(100 * a + 1000);
+}
+else if (c == b)
+{
+    Console.WriteLine(100 * b + 1000);
+}
+else
+{
+    Console.WriteLine(Math.Max(a, Math.Max(b, c)) * 100);
+}
