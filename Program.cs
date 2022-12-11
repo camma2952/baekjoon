@@ -5,5 +5,15 @@ class program
 {
     static void Main()
     {
+        string[] rinp=Console.ReadLine().Split(' ');
+
+        int origm = int.Parse(rinp[0]);
+        int changm = int.Parse(rinp[1]);
+        int pr = int.Parse(rinp[2]);
+
+        if (changm >= pr)
+        {
+            Console.WriteLine(-1);
+        }
     }
 }
